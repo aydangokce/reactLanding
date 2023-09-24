@@ -1,0 +1,79 @@
+@import '../../styles/typography.scss';
+@import '../../styles/colors.scss';
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  max-height: fit-content;
+  background-color: $main-200;
+}
+
+.footerRight {
+  max-height: fit-content;
+  height: fit-content;
+  width: 60%;
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #fff; /* You can change the color here */
+  padding: 5px;
+  background-color: transparent;
+}
+
+input::placeholder {
+  color: #fff; /* You can use any color you prefer */
+}
+
+.contactForm {
+  background-color: $main-200;
+}
+
+.footerLeft {
+  padding: 0 30px;
+  height: 100%;
+  color: #fff;
+  h1 {
+    @include title-1;
+  }
+  h2 {
+    @include body;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 7px;
+  }
+  .contactForm {
+    padding: 25px 0;
+  }
+  .inputRow {
+    display: flex;
+
+    align-items: center;
+    input {
+      margin-right: 20px;
+      width: 35%;
+      margin-bottom: 15px;
+    }
+  }
+  select {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    padding: 5px;
+    margin: 0;
+    width: calc(70% + 20px);
+    border-bottom: 1px solid white;
+    color: #fff;
+  }
+  select option {
+    background-color: $main-200; /* Background color of each option */
+    color: #fff; /* Text color of each option */
+  }
+}

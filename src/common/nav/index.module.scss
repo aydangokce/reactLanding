@@ -1,0 +1,21 @@
+@import '../../styles/typography.scss';
+@import '../../styles/colors.scss';
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 5%;
+  padding-bottom: 0;
+  .navBtn {
+    @include body;
+    &Primary {
+      @include body;
+      color: $main-200;
+    }
+  }
+}
+
+.btnsWrapper a {
+  margin-left: 25px;
+}

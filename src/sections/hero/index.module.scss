@@ -1,0 +1,55 @@
+@import '../../styles/typography.scss';
+@import '../../styles/colors.scss';
+
+.container {
+  width: 100%;
+  padding: 5% 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroLeft {
+  padding: 0 15px;
+  width: 65%;
+  .heading {
+    @include title-1;
+    &Orange {
+      color: $main-200;
+    }
+  }
+  .headingUnderlined {
+    @include title-1;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+  .subHeading {
+    @include body;
+    margin-bottom: 10px;
+    max-width: 85%;
+  }
+  .subHeadingOrange {
+    @include body;
+    color: $main-200;
+    max-width: 85%;
+    margin-bottom: 15px;
+  }
+  .btnprimary {
+    width: fit-content;
+    display: block;
+    margin-top: 25px;
+    border-radius: 25px;
+    background: #f86f03;
+    @include body;
+    color: #fff;
+
+    padding: 8px 20px;
+  }
+}
+
+.heroRight {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
