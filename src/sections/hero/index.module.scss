@@ -3,7 +3,7 @@
 
 .container {
   width: 100%;
-  padding: 5% 7%;
+  padding: 5% 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,4 +52,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 993px) and (max-width: 1400px) {
+  .container {
+    padding: 5% 6%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 5% 60px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .heroRight {
+    width: 60%;
+  }
+  .heroLeft {
+    width: 100%;
+    padding: 0;
+  }
+  .btnprimary {
+    margin-top: 5px !important;
+    padding: 6px 14px !important;
+  }
 }

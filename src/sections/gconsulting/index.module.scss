@@ -3,7 +3,7 @@
 
 .container {
   width: 100%;
-  padding: 50px 5%;
+  padding: 50px 8%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,4 +62,73 @@
 
 .pointsWrapper {
   width: 80%;
+}
+
+@media (min-width: 993px) and (max-width: 1400px) {
+  .container {
+    padding: 25px 6%;
+  }
+
+  .headerLeft {
+    width: 55%;
+  }
+
+  .headerRight {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    img {
+      width: 80%;
+    }
+  }
+
+  .dot {
+    height: 60px;
+    width: 60px;
+    min-width: 60px;
+
+    font-size: 20px;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-top: 0;
+  }
+
+  .header {
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+  }
+
+  .headerRight {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 95%;
+    }
+  }
+
+  .dot {
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+
+    font-size: 15px;
+    margin-right: 10px;
+  }
+
+  .rowCell {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .bulletsRow {
+    flex-direction: column;
+    margin: 0;
+  }
 }

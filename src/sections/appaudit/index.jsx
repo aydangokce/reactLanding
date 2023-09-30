@@ -5,10 +5,10 @@ export default function AppAudit() {
   return (
     <div className={style.container}>
       <div className={style.row}>
-        <h1>App Audit</h1>
         <div className={style.card}>
           <img src="https://storage.googleapis.com/app-pillow.appspot.com/appaudit.webp"></img>
           <div className={style.points}>
+            <h1>App Audit</h1>
             <div className={style.pointsRow}>
               <RightArrow />
               <p>
@@ -27,9 +27,9 @@ export default function AppAudit() {
         </div>
       </div>
       <div className={style.row}>
-        <h1>App Store Optimization</h1>
         <div className={style.card}>
           <div className={style.points}>
+            <h1>App Store Optimization</h1>
             <div className={style.pointsRow}>
               <RightArrow />
               <p>

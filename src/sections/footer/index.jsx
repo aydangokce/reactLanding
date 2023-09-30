@@ -56,6 +56,9 @@ export default function Footer() {
             <option value="option3">Option 3</option>
             <option value="option4">Option 4</option>
           </select>
+          <div className={style.btnWrapper}>
+            <a>Send</a>
+          </div>
         </div>
       </div>
     </div>

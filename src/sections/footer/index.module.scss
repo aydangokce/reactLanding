@@ -12,7 +12,7 @@
 .footerRight {
   max-height: fit-content;
   height: fit-content;
-  width: 60%;
+  width: 50%;
   img {
     width: 100%;
     display: block;
@@ -35,7 +35,8 @@ input::placeholder {
 }
 
 .footerLeft {
-  padding: 0 30px;
+  width: 50%;
+  padding: 0 5%;
   height: 100%;
   color: #fff;
   h1 {
@@ -58,6 +59,8 @@ input::placeholder {
       margin-right: 20px;
       width: 35%;
       margin-bottom: 15px;
+      @include base-typography;
+      font-size: 15px;
     }
   }
   select {
@@ -65,15 +68,76 @@ input::placeholder {
     border: none;
     outline: none;
     background: transparent;
-    padding: 0;
     padding: 5px;
     margin: 0;
     width: calc(70% + 20px);
     border-bottom: 1px solid white;
     color: #fff;
+    font-size: 15px;
+
+    @include base-typography;
   }
   select option {
     background-color: $main-200; /* Background color of each option */
     color: #fff; /* Text color of each option */
+    @include base-typography;
+  }
+}
+
+.btnWrapper {
+  padding: 10px 0;
+  width: calc(70% + 20px);
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  @include base-typography;
+  font-size: 15px;
+  padding: 5px 10px;
+
+  border-bottom: 1px solid white;
+}
+
+@media (max-width: 576px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footerRight {
+    width: 100%;
+  }
+
+  .footerLeft {
+    width: 100%;
+    padding-top: 20px;
+    padding: 0 10%;
+    padding-left: 20%;
+    padding-top: 20px;
+  }
+
+  a {
+    @include base-typography;
+    font-size: 10px;
+    padding: 5px 8px;
+
+    border-bottom: 1px solid white;
+  }
+
+  select {
+    font-size: 10px !important;
+  }
+
+  input {
+    font-size: 10px !important;
+  }
+  .footer {
+    h2 {
+      max-width: calc(70% + 30px);
+    }
+
+    h1 {
+      max-width: calc(70% + 30px);
+    }
   }
 }

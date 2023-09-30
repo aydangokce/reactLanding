@@ -3,7 +3,7 @@
 
 .container {
   width: 100%;
-  padding: 50px 5%;
+  padding: 50px 8%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,4 +58,47 @@
   display: flex;
   justify-content: space-around;
   margin: 30px 0;
+}
+
+@media (min-width: 993px) and (max-width: 1400px) {
+  .container {
+    padding: 30px 5%;
+  }
+  .cardWrapper {
+    width: 85%;
+  }
+  .card {
+    p {
+      font-size: 13px !important;
+    }
+    height: 130px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 30px 15px;
+  }
+  .cardRow {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 !important;
+  }
+
+  .card {
+    margin: 10px 0 !important;
+    width: 90%;
+    height: 80px;
+    svg {
+      width: 40px;
+    }
+
+    padding: 0 5px;
+    p {
+      font-size: 8px !important;
+    }
+  }
+  .bodyText {
+    padding: 0 20px;
+  }
 }
