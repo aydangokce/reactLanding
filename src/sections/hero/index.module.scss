@@ -62,16 +62,20 @@
 
 @media (max-width: 576px) {
   .container {
-    padding: 5% 60px;
+    padding: 5% 0;
     flex-direction: column-reverse;
     align-items: center;
+    padding-top: 0;
   }
 
   .heroRight {
-    width: 60%;
+    width: 80%;
+    img {
+      width: 80% !important;
+    }
   }
   .heroLeft {
-    width: 100%;
+    width: 80%;
     padding: 0;
   }
   .btnprimary {

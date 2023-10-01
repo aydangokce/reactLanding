@@ -52,9 +52,13 @@ export default function Footer() {
             <option value="" disabled selected>
               What do you need help with?
             </option>
-            <option value="option2">WhatWhat</option>
-            <option value="option3">Option 3</option>
-            <option value="option4">Option 4</option>
+            <option value="option2">
+              PERFORMANCE MARKETING – APP MARKETING
+            </option>
+            <option value="option3">APP AUDIT</option>
+            <option value="option4">GROWTH CONSULTING</option>
+            <option value="option4">APP STORE OPTIMIZATION</option>
+            <option value="option4">MARKETING AUTOMATION</option>
           </select>
           <div className={style.btnWrapper}>
             <a>Send</a>
