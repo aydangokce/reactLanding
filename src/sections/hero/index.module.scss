@@ -61,6 +61,9 @@
 }
 
 @media (max-width: 576px) {
+  .nav {
+    padding: 10px 5px;
+  }
   .container {
     padding: 5% 0;
     flex-direction: column-reverse;
@@ -75,8 +78,13 @@
     }
   }
   .heroLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 80%;
     padding: 0;
+    text-align: center !important;
   }
   .btnprimary {
     margin-top: 5px !important;
