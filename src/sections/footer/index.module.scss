@@ -91,12 +91,14 @@ input::placeholder {
   justify-content: flex-end;
 }
 
-a {
-  @include base-typography;
-  font-size: 15px;
-  padding: 5px 10px;
-
-  border-bottom: 1px solid white;
+.btnWrapper {
+  a {
+    @include base-typography;
+    font-size: 15px;
+    padding: 5px 10px;
+    margin-top: 15px;
+    border: 1px solid white;
+  }
 }
 
 @media (max-width: 576px) {
