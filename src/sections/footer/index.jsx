@@ -2,7 +2,7 @@ import style from './index.module.scss';
 
 export default function Footer() {
   return (
-    <div className={style.footer}>
+    <div className={style.footer} id="contact">
       <div className={style.footerRight}>
         <img src="https://storage.googleapis.com/app-pillow.appspot.com/footer.webp"></img>
       </div>

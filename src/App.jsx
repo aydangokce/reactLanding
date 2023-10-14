@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Nav from './common/nav';
 import Hero from './sections/hero/hero';
-import Services from './sections/services';
 import PerformanceMarketing from './sections/pmarketing';
 import GrowthConsulting from './sections/gconsulting';
 import AppAudit from './sections/appaudit';
@@ -12,7 +11,6 @@ function App() {
     <div style={{ width: '100%' }}>
       <Nav />
       <Hero />
-      <Services />
       <PerformanceMarketing />
       <GrowthConsulting />
       <AppAudit />

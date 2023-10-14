@@ -14,6 +14,14 @@
       color: $main-200;
     }
   }
+  background-color: white;
+}
+
+.sticky {
+  padding: 15px 5% !important;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .icon {
@@ -30,7 +38,87 @@
   margin-left: 25px;
 }
 
+.services {
+  margin-left: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: $main-200 !important;
+    margin: 0 !important;
+  }
+
+  .arrowDown {
+    margin-left: 10px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    transition: all 0.3s linear;
+    border-top: 8px solid $main-200;
+  }
+
+  .arrowUp {
+    rotate: -180deg;
+  }
+
+  .servicesRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dropdown {
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    a {
+      color: black !important;
+      font-size: 14px !important;
+      margin: 0 !important;
+    }
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s linear;
+    border-radius: 10px;
+  }
+
+  .active {
+    max-height: 300px;
+    box-shadow: 0px 2px 2px 2px #f86f03;
+  }
+}
+
+.btnsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 576px) {
+  .services {
+    margin-left: 10px;
+    .dropdown {
+      padding: 5px;
+      top: 120%;
+      a {
+        color: black !important;
+        font-size: 9px !important;
+        margin: 0 !important;
+        padding: 5px 0;
+      }
+    }
+  }
+
+  .arrowDown {
+    margin-left: 8px !important;
+  }
   .btnsWrapper a {
     margin-left: 5px;
     padding: 0 3px;
@@ -48,5 +136,12 @@
       height: 20px;
       width: auto;
     }
+  }
+
+  .arrowDown {
+    border-left: 5px solid transparent !important;
+    border-right: 5px solid transparent !important;
+
+    border-top: 5px solid $main-200 !important;
   }
 }

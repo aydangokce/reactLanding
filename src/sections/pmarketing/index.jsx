@@ -6,7 +6,7 @@ import style from './index.module.scss';
 
 export default function PerformanceMarketing() {
   return (
-    <div className={style.container}>
+    <div className={style.container} id="pmarketing">
       <div className={style.header}>
         <h2>Performance Marketing</h2>
         <h1>Create the winning campaign structure</h1>

@@ -18,7 +18,16 @@ export default function Hero() {
           You don’t have a marketing team or need an extension of your marketing
           team to grow?
         </h2>
-        <a className={style.btnprimary}>Contact Us</a>
+        <a
+          className={style.btnprimary}
+          onClick={() => {
+            const el = document.querySelector('#contact');
+
+            el.scrollIntoView({ behavior: 'smooth' });
+          }}
+        >
+          Contact Us
+        </a>
       </div>
       <div className={style.heroRight}>
         <img

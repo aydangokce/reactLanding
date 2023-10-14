@@ -9,7 +9,7 @@ export default function GrowthConsulting() {
   ];
 
   return (
-    <div className={style.container}>
+    <div className={style.container} id="gconsulting">
       <div className={style.header}>
         <div className={style.headerLeft}>
           <h2>Growth Consulting</h2>

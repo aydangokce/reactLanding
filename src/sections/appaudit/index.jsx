@@ -4,7 +4,7 @@ import style from './index.module.scss';
 export default function AppAudit() {
   return (
     <div className={style.container}>
-      <div className={style.row}>
+      <div className={style.row} id="app-audit">
         <div className={style.card}>
           <img src="https://storage.googleapis.com/app-pillow.appspot.com/appaudit.webp"></img>
           <div className={style.points}>
@@ -26,7 +26,7 @@ export default function AppAudit() {
           </div>
         </div>
       </div>
-      <div className={style.row}>
+      <div className={style.row} id="app-optimization">
         <div className={style.card}>
           <div className={style.points}>
             <h1>App Store Optimization</h1>
