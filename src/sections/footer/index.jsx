@@ -1,5 +1,6 @@
 import style from './index.module.scss';
 import { useRef } from 'react';
+import { useState } from 'react';
 
 export default function Footer() {
   // Create refs for input elements
@@ -10,6 +11,8 @@ export default function Footer() {
 
   // Create a ref for the select element
   const selectRef = useRef(null);
+
+  const [mailSent, setMailSent] = useState(false);
 
   return (
     <div className={style.footer} id="contact">
@@ -104,6 +107,7 @@ export default function Footer() {
                   },
                 );
                 if (resp.ok) {
+                  setMailSent(true);
                   console.log('Email Sent');
                 } else {
                   console.log('Wrong');
@@ -112,6 +116,9 @@ export default function Footer() {
             >
               Send
             </a>
+          </div>
+          <div className={style.mailSentWrapper}>
+            {mailSent && <p>We will contact you!</p>}
           </div>
         </div>
       </div>

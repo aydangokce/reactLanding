@@ -11,8 +11,11 @@ export default function Hero() {
           Mobile Growth Consultancy & Agency
         </h1>
         <h2 className={style.subHeading}>
-          We provide product and marketing teams with the necessary skills and
-          knowledge to grow their apps or we manage their mobile growth for them
+          We are an app marketing community composed of professionals who have
+          specialized in app growth and marketing, having managed digital
+          marketing campaigns for some of Germany's leading tech companies. With
+          our industry experience, we are eager to provide the support needed to
+          grow your app.
         </h2>
         <h2 className={style.subHeadingOrange}>
           You don’t have a marketing team or need an extension of your marketing
