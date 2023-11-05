@@ -83,6 +83,7 @@ export default function Footer() {
           <div className={style.btnWrapper}>
             <a
               onClick={async () => {
+                if (mailSent) return;
                 const formData = {
                   firstName: firstNameRef.current.value,
                   lastName: lastNameRef.current.value,
@@ -90,9 +91,8 @@ export default function Footer() {
                   email: emailRef.current.value,
                   companyName: companyRef.current.value,
                 };
-                console.log(JSON.stringify(formData));
+                setMailSent(true);
                 const apiKey = import.meta.env.VITE_APP_API_KEY;
-                console.log(apiKey);
                 const resp = await fetch(
                   'https://express-mail-a-pi.vercel.app/sendEmail',
                   {
@@ -110,6 +110,7 @@ export default function Footer() {
                   setMailSent(true);
                   console.log('Email Sent');
                 } else {
+                  setMailSent(false);
                   console.log('Wrong');
                 }
               }}
