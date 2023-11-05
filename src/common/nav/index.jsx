@@ -44,17 +44,15 @@ export default function Nav() {
           Contact Us
         </a>
         <div className={style.services}>
-          <div className={style.servicesRow}>
-            <a
-              className={style.navBtn}
-              onClick={() => {
-                setActive(() => {
-                  return !active;
-                });
-              }}
-            >
-              Services
-            </a>
+          <div
+            className={style.servicesRow}
+            onClick={() => {
+              setActive(() => {
+                return !active;
+              });
+            }}
+          >
+            <a className={style.navBtn}>Services</a>
             <span
               className={`${style.arrowDown} ${active && style.arrowUp}`}
             ></span>
