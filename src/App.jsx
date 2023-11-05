@@ -27,31 +27,33 @@ function App() {
     <div style={{ width: '100%' }}>
       <Nav />
       <Hero />
-      <motion.div
-        variants={cardVariants}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ amount: 0.2 }}
-      >
-        <PerformanceMarketing />
-      </motion.div>
-      <motion.div
-        variants={cardVariants}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ amount: 0.2 }}
-      >
-        <GrowthConsulting />
-      </motion.div>
-      <motion.div
-        variants={cardVariants}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ amount: 0.2 }}
-      >
-        <AppAudit />
-      </motion.div>
-      <Footer />
+      <div className="sections" style={{ zIndex: 0 }}>
+        <motion.div
+          variants={cardVariants}
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ amount: 0.2 }}
+        >
+          <PerformanceMarketing />
+        </motion.div>
+        <motion.div
+          variants={cardVariants}
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ amount: 0.2 }}
+        >
+          <GrowthConsulting />
+        </motion.div>
+        <motion.div
+          variants={cardVariants}
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ amount: 0.2 }}
+        >
+          <AppAudit />
+        </motion.div>
+        <Footer />
+      </div>
     </div>
   );
 }
