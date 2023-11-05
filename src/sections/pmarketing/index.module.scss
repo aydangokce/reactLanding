@@ -70,8 +70,9 @@
 
 @media (min-width: 993px) and (max-width: 1460px) {
   .iconWrapper {
-    padding-bottom: 15px !important;
+    padding-bottom: 10px !important;
   }
+
   .container {
     padding: 30px 6%;
   }
@@ -79,7 +80,13 @@
     height: 450px;
     width: 45%;
     svg {
-      width: 40%;
+      width: 25%;
+      height: auto;
+    }
+  }
+  #metaWrapper {
+    svg {
+      width: 50%;
       height: auto;
     }
   }

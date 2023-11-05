@@ -51,7 +51,6 @@ export default function Nav() {
                 setActive(() => {
                   return !active;
                 });
-                console.log(active);
               }}
             >
               Services
