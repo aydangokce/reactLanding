@@ -6,6 +6,7 @@ import GrowthConsulting from './sections/gconsulting';
 import AppAudit from './sections/appaudit';
 import Footer from './sections/footer';
 import { motion } from 'framer-motion';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 function App() {
   const cardVariants = {

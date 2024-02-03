@@ -1,12 +1,13 @@
 import NavIcon from '../../assets/icons/navIcon';
 import style from './index.module.scss';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Nav() {
   const [active, setActive] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-
-  // Add a scroll event listener to track the scroll position
+  /*
+   // Add a scroll event listener to track the scroll position
   useEffect(() => {
     const handleScroll = () => {
       // Set a threshold for when the navigation becomes sticky
@@ -25,24 +26,18 @@ export default function Nav() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, []); */
   return (
-    <div className={`${style.navbar} ${isSticky && style.sticky}`}>
+    <div className={`${style.navbar}`}>
       <div className={style.icon}>
         <NavIcon />
       </div>
 
       <div className={style.btnsWrapper}>
-        <a
-          className={style.navBtnPrimary}
-          onClick={() => {
-            const el = document.querySelector('#contact');
+        <Link to={'/contact'}>
+          <a>Contact Us</a>
+        </Link>
 
-            el.scrollIntoView({ behavior: 'smooth' });
-          }}
-        >
-          Contact Us
-        </a>
         <div className={style.services}>
           <div
             className={style.servicesRow}
@@ -58,43 +53,16 @@ export default function Nav() {
             ></span>
           </div>
           <div className={`${style.dropdown} ${active ? style.active : ''}`}>
-            <a
-              onClick={() => {
-                setActive(() => {
-                  return false;
-                });
-                const el = document.querySelector('#pmarketing');
+            <Link to={'/performance-marketing'}>
+              <a>Performance Marketing</a>
+            </Link>
 
-                el.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              Performance Marketing
-            </a>
-            <a
-              onClick={() => {
-                setActive(() => {
-                  return false;
-                });
-                const el = document.querySelector('#gconsulting');
-
-                el.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              {' '}
-              Growth Consulting
-            </a>
-            <a
-              onClick={() => {
-                setActive(() => {
-                  return false;
-                });
-                const el = document.querySelector('#app-audit');
-
-                el.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              App Audit
-            </a>
+            <Link to={'/app-audit'}>
+              <a>App Audit</a>
+            </Link>
+            <Link to={'/growth-consulting'}>
+              <a>Growth Consulting</a>
+            </Link>
             <a
               onClick={() => {
                 setActive(() => {
